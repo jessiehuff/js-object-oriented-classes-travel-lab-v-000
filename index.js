@@ -18,6 +18,10 @@ class Route {
     let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
   }
   estimatedTime(){
-    i
+    if (peakHour) {
+      return this.blocksTravelled()/2;
+    } else {
+      return this.blocksTravelled()/3;
+    }
   }
 }
